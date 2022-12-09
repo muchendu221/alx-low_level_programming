@@ -1,2 +1,1 @@
-Checking whether an number is positive or negative
-Pring the last digit
+Print alphabet in lower case
