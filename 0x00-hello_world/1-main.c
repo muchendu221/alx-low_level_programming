@@ -7,5 +7,7 @@
  */
 int main(void)
 {
-    return (0);
+  int x = 98;
+  printf("%d\n", x);
+  return (0);
 }
