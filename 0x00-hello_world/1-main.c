@@ -3,4 +3,5 @@ int main()
 {
   int x =56;
   printf("%d/n",x);
+  return 0;
 }
