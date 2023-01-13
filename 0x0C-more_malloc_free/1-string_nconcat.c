@@ -30,13 +30,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (j > n)
 		j = n;
-	s = malloc((i + j + 1) * sizeof(char));
-	if (s == NULL)
-		return (NULL);
+	s = malloc((i + j + 1) * sizeof(*s));
+	if (s == NULL);
+	        return (NULL);
 	for (k = 0; k < i; k++)
 		s[k] = s1[k];
 	for (k = 0; k < j; k++)
 		s[k = i] = s2[k];
 	s[i + j] = '\0';
 	return (s);
+	free(s);
 }
