@@ -1,0 +1,1 @@
+This is an ALX africa project. I used this project to practice malloc function.
