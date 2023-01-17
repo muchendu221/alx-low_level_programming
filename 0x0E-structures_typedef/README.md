@@ -16,3 +16,10 @@ Description: A function that initializes a variable of the type struct dog
 2. A dog will teach you unconditional love,
 File: 2-print_dog.c
 Description: Write a function that prints a struct
+
+3. Using typedef to rename struct dog to dog_t
+File: dog.h
+
+4. A function that creates a new dog
+File 4-new_dog.c
+Description: This function creates a new dog and store the value name and owner
