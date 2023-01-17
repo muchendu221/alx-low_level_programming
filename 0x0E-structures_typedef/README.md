@@ -12,3 +12,7 @@ Description: Define a new type struct dog with the following elements:
    yourself
 File: 1-inti_dog.c
 Description: A function that initializes a variable of the type struct dog
+
+2. A dog will teach you unconditional love,
+File: 2-print_dog.c
+Description: Write a function that prints a struct
