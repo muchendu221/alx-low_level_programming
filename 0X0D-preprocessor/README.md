@@ -14,3 +14,8 @@ Description: A header file that defines a macro named PI as as abbreviation for
 File: 2-main.c
 Description: A program that prints the name of the file it was compiled from,
 	     followed by a new line.
+
+3. Function-like macro
+File: 3-function_like_macro.h
+Description: A fuction-like macro ABS(x) that computes the absolute value of a
+	     number x.
