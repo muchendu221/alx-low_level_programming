@@ -18,7 +18,7 @@ File: 2-print_dog.c
 Description: Write a function that prints a struct
 
 3. Using typedef to rename struct dog to dog_t
-File: dog.h
+File: dog.h, same task 0
 
 4. A function that creates a new dog
 File 4-new_dog.c
