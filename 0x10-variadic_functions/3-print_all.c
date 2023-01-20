@@ -68,7 +68,7 @@ void print_all(const char * const format, ...)
 			if (type[j].t[0] == format[i])
 			{
 				printf("%s", sp);
-				type[j].f(args);
+				type[j].f(ap);
 				sp = ", ";
 				break;
 			}
@@ -77,4 +77,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
+	va_end(ap);
 }
