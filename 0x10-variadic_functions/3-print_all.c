@@ -1,3 +1,4 @@
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -14,7 +15,7 @@ void print_char(va_list c)
  * print_int - entry point va_list type
  * @i: va_list
  */
-void print_int(va_list i);
+void print_int(va_list i)
 {
 	printf("%i", va_arg(i, int));
 }
@@ -32,7 +33,7 @@ void print_float(va_list f)
  */
 void print_string(va_list s)
 {
-	char *str = va_arg(s. char *);
+	char *str = va_arg(s, char *);
 
 	if (str != NULL)
 	{
