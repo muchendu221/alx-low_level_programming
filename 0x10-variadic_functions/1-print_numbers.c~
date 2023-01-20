@@ -1,0 +1,24 @@
+#include <stdarg.h>
+/**
+ * print_numbers - Prints numbers
+ * @separator: special character for separation
+ * @n: numbers to be printed
+ *
+ * Return: 0
+ */
+void print_numbers(const char *separator, const unsigned int n, ..)
+{
+	unsigned int i;
+	va_list ap;
+
+	va_start(ap, n);
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", va_args(args, int));
+		if (separator != NULL)
+		{
+			if (count < n - 1)
+				printf("%s", separator);
+		}
+	}
+}
