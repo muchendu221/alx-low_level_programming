@@ -12,3 +12,7 @@ Description: Prints numbers followed by a new line
 2. Print String
 File: 2-print_strings.c
 Description: Prints strings followed by a new line
+
+3. . Prints anything
+File: 3-print_all.c
+Description: A function that prints int, char, float and strings
