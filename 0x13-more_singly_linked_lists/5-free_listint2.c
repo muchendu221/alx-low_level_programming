@@ -2,20 +2,20 @@
 
 /**
  * free_listint2 - entry point
- * @head: Start of list
- *
- * Return: always 0
+ * @head:	list to free
  */
-void free_listint2(listint_t **head);
+
+void free_listint2(listint_t **head)
 {
-	listint_t *temp, *prev;
+	listint_t *prev, *tmp;
 
 	prev = (*head);
+
 	while (prev != NULL)
 	{
-		temp = prev->next;
+		tmp = prev->next;
 		free(prev);
-		prev = temp;
+		prev = tmp;
 	}
 	(*head) = prev;
 }
