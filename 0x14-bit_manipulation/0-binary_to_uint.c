@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * binary_to_uint - entry point
  * @b: - pointer to the start of binary string
@@ -31,7 +32,7 @@ unsigned int binary_to_uint(const char *b)
 			pow = pow * base;
 		sum = sum + (pow * (b[i] - 48));
 		len--;
-			pow = 1;/* reset exponent*/
+		pow = 1;/* reset exponent*/
 	}
 	return (sum);
 }
