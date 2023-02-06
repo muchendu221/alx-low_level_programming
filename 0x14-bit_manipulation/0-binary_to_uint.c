@@ -1,59 +1,29 @@
 #include "main.h"
+
 /**
- * binary_to_uint - entry point
- * @b: string with information about binary number
- * Return: a decimal number
+ * binary_to_uint - converts a binary number to an unsigned int.
+ * @b: pointer to a string containing a binary number
+ *
+ * Return: unsigned int with decimal value of binsry number, or 0 if error
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0, exp = 0;
-	unsigned int res = 0;
+	int i;
+	unsigned int num;
 
-	if (b == NULL)
-		return (res);
-
-	while (b[i])
-		i++;
-
-	for (i -= 1; i >= 0; i--)
+	num = 0;
+	if (!b)
+		return (0);
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] == '1' || b[i] == '0')
-		{
-			if (b[i] == '1')
-			{
-				res += _pow(2, exp);
-				exp++;
-			}
-			else
-			{
-				exp++;
-			}
-		}
-		else
-		{
-			res = 0;
-			return (res);
-		}
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
 	}
-	return (res);
-
-}
-/**
- * _pow - entry point
- * @base: decimal base number
- * @exp: decimal expone number
- * Return: power of number
- */
-int _pow(int base, int exp)
-{
-	int i = 0, res = 1;
-
-	if (exp == 0)
-		return (res);
-	while (i < exp)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		res *= base;
-		i++;
+		num <<= 1;
+		if (b[i] == '1')
+			num += 1;
 	}
-	return (res);
+	return (num);
 }
