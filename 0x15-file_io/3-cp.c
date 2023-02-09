@@ -34,7 +34,7 @@ ssize_t _read(const char *filename, int fd, char *buf, size_t count)
 
 	if (bytes_read > -1)
 		return (bytes_read);
-	dprintf(STDERR_FILENO, "Error: can't read from file %s\n", filename);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 	return (-1);
 }
 
@@ -77,7 +77,7 @@ int main(int argc, const char *argv[])
 	fd_in = open(argv[1], O_RDONLY);
 	if (fd_in < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from fe %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	fd_out = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
