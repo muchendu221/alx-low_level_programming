@@ -1,0 +1,1 @@
+This is a projecttop practise on dynamic and static list
